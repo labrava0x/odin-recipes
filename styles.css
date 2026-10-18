@@ -1,0 +1,229 @@
+/* ==========================================
+1. IMPORTS & GLOBAL FOUNDATIONS
+   ================================---------- */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Great+Vibes&family=UnifrakturMaguntia&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    /* outline: 1px solid rgba(245, 215, 127, 0.35); */
+}
+
+body {
+    background-color: #1b2622;
+    color: #e6d5c3;
+    font-family: 'Playfair Display', "Times New Roman", serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 40px;
+}
+
+
+/* ==========================================
+   2. GENERAL ELEMENT TAGS (The Structure)
+   ================================---------- */
+/* Main Recipe List Index (Targeted directly to match your existing HTML) */
+ul {
+    list-style-type: none;
+    padding: 0;
+    max-width: 700px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+li {
+    background-color: #f4f4f4;
+    margin-bottom: 0;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Cinzel Decorative', cursive, serif;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1, .recipe-main-title {
+    font-family: 'UnifrakturMaguntia', cursive, serif;
+    font-size: 3.5rem;
+    color: #f5d77f;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-family: 'Cinzel Decorative', 'Great Vibes', cursive, serif;
+    color: #d4ac4e;
+    border-bottom: 2px solid #3a4d46;
+    padding-bottom: 5px;
+    margin-top: 40px;
+}
+
+
+/* ==========================================
+   3. COMPONENTS & SPECIFIC RECIPE CARDS
+   ================================---------- */
+.odin-recipes {
+    color: #f5d77f;
+    text-align: center;
+    font-family: 'UnifrakturMaguntia', cursive, serif;
+    font-size: 3.5rem;
+}
+
+.recipe-card {
+    flex: 1;
+    min-width: 220px;
+    padding: 0;
+    margin-bottom: 0;
+    border: 1px solid rgba(245, 215, 127, 0.5);
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.recipe-card a {
+    display: block;
+    padding: 24px;
+    color: inherit;
+    text-decoration: none;
+}
+
+.recipe-card:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.1);
+}
+
+li.sandwich-item {
+    background-color: #c89d7c;
+}
+
+li.sandwich-item a {
+    color: #2b1810;
+}
+
+li.coffee-item {
+    background-color: #1a120b;
+}
+
+li.coffee-item a {
+    color: #d4b59d;
+}
+
+li.tea-item {
+    background-color: #3b2314;
+}
+
+li.tea-item a {
+    color: #f2e3d5;
+}
+
+li.dessert-item {
+    background-color: #f4d06f;
+}
+
+li.dessert-item a {
+    color: #3b2e0c;
+}
+
+/* Ingredients & Steps Styling - Forced Column Stack for Readability */
+.wave-ingredients,
+.wave-steps,
+.sandwich-ingredients {
+    display: flex;
+    flex-direction: column; /* Stacks items neatly into a vertical column */
+    gap: 12px;
+}
+
+.wave-ingredients li,
+.wave-steps li,
+.sandwich-ingredients li {
+    flex: auto; /* Respects content size and prevents collapse */
+    background-color: #d4ac4e;
+    color: #2b2207;
+    margin-bottom: 0;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px dashed #f5d77f;
+}
+
+.wave-ingredients li strong,
+.wave-steps li strong,
+.sandwich-ingredients li strong {
+    color: #2b2207;
+}
+
+.options-list li {
+    background-color: #261c14;
+    color: #e6d5c3;
+    border: 2px solid #6b4c3b;
+    border-radius: 8px;
+    padding: 18px;
+    margin-bottom: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease;
+}
+
+.options-list li:hover {
+    transform: translateY(-2px);
+    border-color: #9c6b4e;
+}
+
+
+/* ==========================================
+   4. IMAGES & FINAL DETAILS (The Polish)
+   ================================---------- */
+.sandwich-image {
+    display: block;
+    width: 450px;           
+    max-width: 100%;        
+    height: auto;           
+    margin: 20px auto;      
+}
+
+.drinks-image {
+    display: block;
+    width: 450px;           
+    max-width: 100%;        
+    height: auto;           
+    margin: 20px auto;      
+}
+
+.bananarcrepe {
+    display: block;           
+    width: 450px;           
+    max-width: 100%;        
+    height: auto;           
+    margin: 20px auto;      
+    border-radius: 4px;     
+}
+
+.spellbook-note {
+    background-color: #1e1e2e;
+    color: #cdd6f4;
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 8px;
+    border: 1px dashed #d4af37;
+    font-style: italic;
+    text-align: center;
+}
+
+#author-note {
+    color: #f5e0dc;
+}
+
+.recipe-description {
+    color: #d4af37;
+    line-height: 1.6;
+}
+
+.nejire-hug {
+    color: #aebff3;         
+    font-weight: bold;      
+    font-style: italic;     
+}

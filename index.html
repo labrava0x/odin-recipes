@@ -1,15 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Odin Recipes</title>
-    </head>
-    <body>
-        <h1>Odin Recipes</h1>
-        
-        <ul>
-            <li><a href="recipes/sandwich.html">Thick-Toasted Gouda and Egg Melt Sandwich</a></li>
-            <li><a href="recipes/drinks.html">Soul-Warming Dark Coffee or Strong Black Tea</a></li>
-        </ul>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <title>Odin Recipes</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Internal CSS for the Spellbook Glow -->
+    <style>
+        .odin-recipes {
+            text-align: center;
+            text-shadow: 0 0 12px rgba(212, 175, 55, 0.6), 
+                         0 0 25px rgba(212, 175, 55, 0.3);
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="odin-recipes">Odin Recipes</h1>
+    
+    <ul>
+        <li class="sandwich-item recipe-card"><a href="recipes/sandwich.html">Thick-Toasted Gouda and Egg Melt Sandwich</a></li>
+        <li class="coffee-item recipe-card"><a href="recipes/drinks.html">Soul-Warming Dark Coffee</a></li>
+        <li class="tea-item recipe-card"><a href="recipes/drinks.html">Strong Black Tea</a></li>
+        <li class="dessert-item recipe-card"><a href="recipes/dessert.html">Banana Crepe Roll</a></li>
+    </ul>
+
+    <div id="author-note" class="spellbook-note">
+        <p>This is my recipe book, my very first website showing my vision, and when chance comes, I shall add my own illustrations too. I hope my recipes have you under a spell. Welcome to my dream!</p>
+    </div>
+</body>
 </html>
