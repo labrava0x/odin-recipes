@@ -1,42 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Soul-Warming Dark Coffee or Strong Black Tea</title>
-        <link rel="stylesheet" href="../styles.css">
-    </head>
-    <body>
-        <h1>Soul-Warming Dark Coffee or Strong Black Tea</h1>
-        
-        <!-- The library cafe window view -->
-        <img src="images/coffeentea.jpeg" alt="Side-by-side dark coffee and robust black tea in a gothic library cafe under daylight from a window" class="drinks-image">
-        <p class="recipe-description">
-<p class="recipe-description">
-  A scalding-hot, deeply comforting, unfiltered dark brew—whether bold dark coffee or robust black tea—crafted for one absolute purpose: to deliver that profound, undeniable sensation of <span class="nejire-hug">hugging you from the inside</span>. Unapologetically strong, zero sugar, and brewed with absolute intention.
-</p>
-        <h2>The Options</h2>
-        <ul class="options-list">
-            <li><strong>Option A (Dark Coffee):</strong> Freshly ground dark roast coffee beans, brewed bold, dark, and piping hot.</li>
-            <li><strong>Option B (Strong Black Tea):</strong> Premium black tea leaves, brewed deep and dark until it packs a real, uncompromised punch.</li>
-        </ul>
-        
-        <h2>Ingredients</h2>
-        <ul class="wave-ingredients">
-            <li>Filtered water, brought to a rolling boil</li>
-            <li>Your choice of: Dark roast coffee grounds OR robust black tea leaves/bags</li>
-            <li>A cold glass of fresh milk (served alongside to get your calcium and provide the ultimate refreshing contrast!)</li>
-        </ul>
-        
-        <h2>Steps</h2>
-        <ol class="wave-steps">
-            <li>Bring your filtered water to a rolling boil, ensuring it is scalding hot to radiate heat for as long as possible.</li>
-            <li>Place your chosen dark coffee grounds or black tea into your mug, infuser, or press. Pour the boiling water directly over it.</li>
-            <li>Let it steep or brew until it reaches a rich, dark, robust color and maximum strength. </li>
-            <li>Remove the tea bag or press your coffee. Take your spoon and **carefully, deliberately stir** the brew—this careful stirring is a mandatory step to fully integrate the bold character of an unfiltered strong drink. Zero sugar, because anything else dilutes and ruins its soul.</li>
-            <li>Wrap your hands around the warm ceramic, feel that intense heat radiate, and take your first sip, letting it deliver that exact feeling of hugging you from the inside out.</li>
-            <li>Finally, pour yourself a refreshing glass of cold milk to finish—getting your calcium, washing down the richness of your sandwich, and experiencing the sharp, perfect contrast against your hot, dark brew.</li>
-        </ol>
-        
-      <p><a href="../index.html" style="color: #c8a2c8; text-shadow: 0 0 8px rgba(160, 32, 240, 0.5); text-decoration: none;">← Back to Home</a></p>
-    </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soul-Warming Dark Coffee or Strong Black Tea</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      background-color: #121212;
+      color: #e0e0e0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: 2rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    h1, h2 {
+      color: #c8a2c8;
+      text-shadow: 0 0 8px rgba(160, 32, 240, 0.4);
+    }
+    .nejire-hug {
+      color: #c8a2c8;
+      font-weight: bold;
+    }
+    .drinks-svg-container {
+      text-align: center;
+      margin: 1.5rem 0 2rem 0;
+    }
+    ul, ol {
+      margin-bottom: 1.5rem;
+      line-height: 1.8;
+    }
+    a {
+      color: #c8a2c8;
+      text-shadow: 0 0 8px rgba(160, 32, 240, 0.5);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header style="text-align: center; margin-bottom: 1rem;">
+    <h1>Soul-Warming Dark Coffee or Strong Black Tea</h1>
+  </header>
+
+  <main>
+    <div class="drinks-svg-container">
+      <svg class="coffee-hug-icon" viewBox="0 0 200 200" width="160" height="160" xmlns="http://www.w3.org/2000/svg" style="filter: drop-shadow(0 0 12px rgba(160, 32, 240, 0.5));">
+        <defs>
+          <linearGradient id="mugGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#2a2438"/>
+            <stop offset="100%" stop-color="#141118"/>
+          </linearGradient>
+          <linearGradient id="coffeeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#4a2e1b"/>
+            <stop offset="100%" stop-color="#180c05"/>
+          </linearGradient>
+          <filter id="cozyGlow" x="-30%" y="-30%" width="160%" height="160%">
+            <feGaussianBlur stdDeviation="3.5" result="blur" />
+            <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+          </filter>
+        </defs>
+        <g filter="url(#cozyGlow)" stroke="#c8a2c8" stroke-width="3.5" stroke-linecap="round" fill="none" opacity="0.9">
+          <path d="M75,65 C62,48 88,38 75,18" />
+          <path d="M100,58 C87,41 113,31 100,11" />
+          <path d="M125,65 C112,48 138,38 125,18" />
+        </g>
+        <path d="M135,95 C165,95 168,140 135,152" fill="none" stroke="url(#mugGrad)" stroke-width="12" stroke-linecap="round"/>
+        <path d="M58,80 L142,80 C142,80 148,155 100,155 C52,155 58,80 58,80 Z" fill="url(#mugGrad)" stroke="#4e3e63" stroke-width="3"/>
+        <ellipse cx="100" cy="85" rx="42" ry="13" fill="url(#coffeeGrad)"/>
+        <ellipse cx="100" cy="85" rx="37" ry="10" fill="#1c0f07"/>
+        <path d="M82,83 Q100,90 118,83" stroke="#6b4423" stroke-width="1.5" fill="none" opacity="0.5"/>
+      </svg>
+    </div>
+
+    <p class="recipe-description">
+      A scalding-hot, deeply comforting, unfiltered dark brew—whether bold dark coffee or robust black tea—crafted for one absolute purpose: to deliver that profound, undeniable sensation of <span class="nejire-hug">hugging you from the inside</span>. Unapologetically strong, zero sugar, and brewed with absolute intention.
+    </p>
+
+    <h2>The Options</h2>
+    <ul class="options-list">
+      <li><strong>Option A (Dark Coffee):</strong> Freshly ground dark roast coffee beans, brewed bold, dark, and piping hot.</li>
+      <li><strong>Option B (Strong Black Tea):</strong> Premium black tea leaves, brewed deep and dark until it packs a real, uncompromised punch.</li>
+    </ul>
+
+    <h2>Ingredients</h2>
+    <ul class="wave-ingredients">
+      <li>Filtered water, brought to a rolling boil</li>
+      <li>Your choice of: Dark roast coffee grounds OR robust black tea leaves/bags</li>
+      <li>A cold glass of fresh milk (served alongside to get your calcium and provide the ultimate refreshing contrast!)</li>
+    </ul>
+
+    <h2>Steps</h2>
+    <ol class="wave-steps">
+      <li>Bring your filtered water to a rolling boil, ensuring it is scalding hot to radiate heat for as long as possible.</li>
+      <li>Place your chosen dark coffee grounds or black tea into your mug, infuser, or press. Pour the boiling water directly over it.</li>
+      <li>Let it steep or brew until it reaches a rich, dark, robust color and maximum strength.</li>
+      <li>Remove the tea bag or press your coffee. Take your spoon and <strong>carefully, deliberately stir</strong> the brew—this careful stirring is a mandatory step to fully integrate the bold character of an unfiltered strong drink. Zero sugar, because anything else dilutes and ruins its soul.</li>
+      <li>Wrap your hands around the warm ceramic, feel that intense heat radiate, and take your first sip, letting it deliver that exact feeling of hugging you from the inside out.</li>
+      <li>Finally, pour yourself a refreshing glass of cold milk to finish—getting your calcium, washing down the richness of your sandwich, and experiencing the sharp, perfect contrast against your hot, dark brew.</li>
+    </ol>
+
+    <p><a href="index.html">← Back to Home</a></p>
+  </main>
+
+</body>
 </html>
